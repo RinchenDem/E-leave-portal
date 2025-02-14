@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNEC E-Leave Portal</title>
+    <style>
+        /* Basic Layout Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        header .logo img {
+            width: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        /* Student Section Styling */
+        #student {
+            padding: 20px;
+            background-color: #e3f2fd;
+            margin: 20px 0;
+        }
+
+        #student h2 {
+            font-size: 2em;
+        }
+
+        #student button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #student button:hover {
+            background-color: #45a049;
+        }
+
+        /* Admin Section Styling */
+        #admin {
+            padding: 20px;
+            background-color: #ffe082;
+        }
+
+        #admin button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #admin button:hover {
+            background-color: #fb8c00;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="JNEC Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#student-login">Student Login</a></li>
+                <li><a href="#admin-login">Admin Login</a></li>
+                <li><a href="#timetable">Timetable</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Body Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to the JNEC E-Leave Portal</h1>
+        <p>Streamline your leave applications and track your attendance efficiently.</p>
+    </section>
+
+    <!-- Student Section -->
+    <section id="student">
+        <h2>Student Portal</h2>
+        <div>
+            <button onclick="location.href='leave-application.html'">Apply for Leave</button>
+            <p>Attendance: <span id="attendance">95%</span></p>
+            <p>Leave Categories: Regular, Emergency</p>
+            <h3>Leave Application Procedure:</h3>
+            <ul>
+                <li>Select the leave category</li>
+                <li>Fill in the required details</li>
+                <li>Submit for approval</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin">
+        <h2>Admin Portal</h2>
+        <div class="admin-controls">
+            <button onclick="location.href='leave-approval.html'">Approve Leave</button>
+            <button onclick="location.href='update-timetable.html'">Update Timetable</button>
+            <button onclick="location.href='upload-results.html'">Upload Leave Results</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us | Privacy Policy | Terms of Service</p>
+    </footer>
+
+</body>
+</html>
